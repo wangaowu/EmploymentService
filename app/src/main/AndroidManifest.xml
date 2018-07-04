@@ -18,29 +18,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".index.MainActivity_"
-            android:theme="@style/NoTitleActivityTheme" />
-        <activity
             android:name=".settings.MySettingsActivity"
             android:theme="@style/NoTitleActivityTheme" />
         <activity
             android:name=".main.MainActivity"
             android:theme="@style/NoTitleActivityTheme" />
         <activity
-            android:name=".mytask.MyTaskActivity"
-            android:theme="@style/NoTitleActivityTheme" />
-        <activity
-            android:name=".recordinfo.RecordHouseInfoActivity"
-            android:theme="@style/NoTitleActivityTheme" />
-        <activity
-            android:name=".recordinfo.AddImageActivity"
-            android:theme="@style/NoTitleActivityTheme" />
-        <activity
-            android:name=".updateinfo.UpdateHouseInfoActivity"
-            android:theme="@style/NoTitleActivityTheme" />
-        <activity
             android:name=".settings.UpdateActivity"
             android:theme="@style/NoTitleActivityTheme" />
+        <activity
+            android:name=".detail.EmployeeDetailActivity"
+            android:theme="@style/NoTitleActivityTheme" />
+        <activity
+            android:name=".history.EmployeeHistoryActivity"
+            android:theme="@style/NoTitleActivityTheme" />
+        <activity
+            android:name=".change.EmployeeEditActivity"
+            android:theme="@style/NoTitleActivityTheme"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"

@@ -18,14 +18,13 @@ import com.unistrong.requestlibs.response.ResponseBody;
  */
 public class LoginActivity extends BaseActivity implements LoginView {
 
-    private ActivityLoginBinding binding;
     private LoginPresenter presenter;
     private LoginViewModel viewModel;
 
     @Override
     protected void initMvp() {
         getWindow().setFlags(1024, 1024);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_login);
+        ActivityLoginBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_login);
         viewModel = new LoginViewModel(binding);
         presenter = new LoginPresenter(this, binding);
 
@@ -111,6 +110,10 @@ public class LoginActivity extends BaseActivity implements LoginView {
                 saveSpPassword();
                 saveSpToken(resp.getResult().getToken());
                 saveSpUserId(resp.getResult().getUserId());
+                SPUtils.putString(LoginActivity.this,
+                        Constant.SP_KEY.USER_NAME, resp.getResult().getUserName());
+                SPUtils.putString(LoginActivity.this,
+                        Constant.SP_KEY.USER_OFFICE, resp.getResult().getUserOfficeName());
                 presenter.startMainActivity(LoginActivity.this);
                 finish();
             }

@@ -9,7 +9,6 @@ import com.unistrong.baselibs.ui.ProgressView;
 import com.unistrong.baselibs.utils.IToast;
 import com.unistrong.employmentservice.R;
 import com.unistrong.framwork.utils.UpdateHelper;
-import com.unistrong.requestlibs.request.BaseRequest;
 import com.unistrong.requestlibs.request.MultiPartImpl;
 import com.unistrong.requestlibs.response.ResponseBody;
 
@@ -47,7 +46,7 @@ public class UpdateActivity extends BaseActivity {
     }
 
     private void downFile() {
-        MultiPartImpl.getInstance().downloadFile(BaseRequest.HOST + apkUrl,
+        MultiPartImpl.getInstance().downloadFile(apkUrl,
                 UpdateHelper.APK_FILE_DIR, new Handler(),
                 new ResponseBody(Object.class) {
                     @Override

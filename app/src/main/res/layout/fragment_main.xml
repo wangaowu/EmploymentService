@@ -23,14 +23,15 @@
                 <View
                     android:layout_width="3dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:background="@color/common_text_color" />
+                    android:layout_marginRight="5dp"
+                    android:background="@color/global_orange" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="登记数统计"
+                    android:text="变更数统计"
                     android:textColor="@color/common_text_color"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <Space
@@ -45,7 +46,7 @@
                     android:drawablePadding="10dp"
                     android:drawableRight="@drawable/icon_refresh"
                     android:gravity="center_vertical"
-                    android:text="更新于5.3 12:00"
+                    android:text="等待刷新.."
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
@@ -53,7 +54,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:paddingBottom="20dp"
                 android:paddingLeft="10dp"
@@ -110,48 +111,56 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="20dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="年登记统计数"
-                        android:textColor="@color/common_text_color"
-                        android:textStyle="bold" />
-
-                    <Space
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <TextView
-                        android:id="@+id/tv_count_year"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:text="总登记数121"
-                        android:textColor="@color/common_text_color" />
-                </LinearLayout>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="表格" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="近30天变更"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_count_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="总变更数:-"
+                    android:textColor="@color/common_text_color" />
             </LinearLayout>
 
-        </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+                <com.unistrong.baselibs.ui.chart.PolyChartView
+                    android:id="@+id/chart_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:id="@+id/view_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="暂无变更数量数据"
+                    android:textColor="@android:color/darker_gray" />
+
+            </FrameLayout>
+        </LinearLayout>
     </android.support.v4.widget.SwipeRefreshLayout>
 </layout>

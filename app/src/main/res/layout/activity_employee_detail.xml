@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_title"
+            layout="@layout/common_title_layout" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.unistrong.baselibs.ui.CircleImageView
+                            android:id="@+id/iv_icon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:text="小明"
+                            android:textColor="@color/text_common"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_history"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_stroke_blue"
+                        android:gravity="center"
+                        android:text="变更历史"
+                        android:textColor="@color/textBlue" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/common_item_10dp_span_layout_" />
+
+                <LinearLayout
+                    android:id="@+id/ll_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

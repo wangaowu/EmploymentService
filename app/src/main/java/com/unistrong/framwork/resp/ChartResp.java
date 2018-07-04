@@ -1,5 +1,6 @@
 package com.unistrong.framwork.resp;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /***
@@ -10,12 +11,14 @@ public class ChartResp {
     /**
      * code : 0
      * msg : string
-     * result : {"changeStatisticsList":[{"currentDayCount":"string","day":"string"}],"employmentStatisticsList":[{"currentDayCount":"string","day":"string"}],"personStatisticsList":[{"currentDayCount":"string","day":"string"}]}
+     * result : [{"currentDayCount":"string","day":"string"}]
+     * total : 0
      */
 
     private int code;
     private String msg;
-    private ResultBean result;
+    private int total;
+    private List<ResultBean> result;
 
     public int getCode() {
         return code;
@@ -33,119 +36,45 @@ public class ChartResp {
         this.msg = msg;
     }
 
-    public ResultBean getResult() {
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
+    public List<ResultBean> getResult() {
         return result;
     }
 
-    public void setResult(ResultBean result) {
+    public void setResult(List<ResultBean> result) {
         this.result = result;
     }
 
     public static class ResultBean {
-        private List<ChangeStatisticsListBean> changeStatisticsList;
-        private List<EmploymentStatisticsListBean> employmentStatisticsList;
-        private List<PersonStatisticsListBean> personStatisticsList;
+        /**
+         * currentDayCount : string
+         * day : string
+         */
 
-        public List<ChangeStatisticsListBean> getChangeStatisticsList() {
-            return changeStatisticsList;
+        private String currentDayCount;
+        private String day;
+
+        public String getCurrentDayCount() {
+            return currentDayCount;
         }
 
-        public void setChangeStatisticsList(List<ChangeStatisticsListBean> changeStatisticsList) {
-            this.changeStatisticsList = changeStatisticsList;
+        public void setCurrentDayCount(String currentDayCount) {
+            this.currentDayCount = currentDayCount;
         }
 
-        public List<EmploymentStatisticsListBean> getEmploymentStatisticsList() {
-            return employmentStatisticsList;
+        public String getDay() {
+            return day;
         }
 
-        public void setEmploymentStatisticsList(List<EmploymentStatisticsListBean> employmentStatisticsList) {
-            this.employmentStatisticsList = employmentStatisticsList;
-        }
-
-        public List<PersonStatisticsListBean> getPersonStatisticsList() {
-            return personStatisticsList;
-        }
-
-        public void setPersonStatisticsList(List<PersonStatisticsListBean> personStatisticsList) {
-            this.personStatisticsList = personStatisticsList;
-        }
-
-        public static class ChangeStatisticsListBean {
-            /**
-             * currentDayCount : string
-             * day : string
-             */
-
-            private String currentDayCount;
-            private String day;
-
-            public String getCurrentDayCount() {
-                return currentDayCount;
-            }
-
-            public void setCurrentDayCount(String currentDayCount) {
-                this.currentDayCount = currentDayCount;
-            }
-
-            public String getDay() {
-                return day;
-            }
-
-            public void setDay(String day) {
-                this.day = day;
-            }
-        }
-
-        public static class EmploymentStatisticsListBean {
-            /**
-             * currentDayCount : string
-             * day : string
-             */
-
-            private String currentDayCount;
-            private String day;
-
-            public String getCurrentDayCount() {
-                return currentDayCount;
-            }
-
-            public void setCurrentDayCount(String currentDayCount) {
-                this.currentDayCount = currentDayCount;
-            }
-
-            public String getDay() {
-                return day;
-            }
-
-            public void setDay(String day) {
-                this.day = day;
-            }
-        }
-
-        public static class PersonStatisticsListBean {
-            /**
-             * currentDayCount : string
-             * day : string
-             */
-
-            private String currentDayCount;
-            private String day;
-
-            public String getCurrentDayCount() {
-                return currentDayCount;
-            }
-
-            public void setCurrentDayCount(String currentDayCount) {
-                this.currentDayCount = currentDayCount;
-            }
-
-            public String getDay() {
-                return day;
-            }
-
-            public void setDay(String day) {
-                this.day = day;
-            }
+        public void setDay(String day) {
+            this.day = day;
         }
     }
 }

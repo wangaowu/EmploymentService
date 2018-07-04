@@ -4,7 +4,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@color/global_blue"
+        android:background="@color/global_orange"
         android:tag="title">
         <!--22px为标识数据-->
 
@@ -45,15 +45,17 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/iv_right"
+        <TextView
+            android:id="@+id/tv_right"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
+            android:gravity="center"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:src="@drawable/icon_me"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:visibility="gone" />
     </RelativeLayout>
 </layout>

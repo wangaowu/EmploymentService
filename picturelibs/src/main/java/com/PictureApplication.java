@@ -21,7 +21,7 @@ public class PictureApplication extends Application {
         RequestOptions requestOptions = new RequestOptions();
         requestOptions.encodeFormat(Bitmap.CompressFormat.JPEG);
         requestOptions.encodeQuality(80);
-        requestOptions.error(R.drawable.bg_picture_default);
+        requestOptions.error(R.drawable.icon_default_profile);
         glideBuilder.setDefaultRequestOptions(requestOptions);
         Glide.init(this, glideBuilder);
     }

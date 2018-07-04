@@ -1,41 +1,45 @@
 package com.unistrong.employmentservice.main.fragment;
 
-import android.content.Context;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
+import com.unistrong.baselibs.utils.SPUtils;
+import com.unistrong.employmentservice.R;
+import com.unistrong.employmentservice.databinding.FragmentMineBinding;
 import com.unistrong.employmentservice.main.MainActivity;
-import com.unistrong.employmentservice.main.MainActivityPresenter;
+import com.unistrong.framwork.utils.Constant;
 
 /**
  * 我的
  */
-public class MineFragment extends Fragment {
-
+public class MineFragment extends Fragment implements View.OnClickListener {
     public static final String TAG = "MineFragment";
-    private MainActivity activity;
-    private MainActivityPresenter presenter;
+
+    private FragmentMineBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        TextView textView = new TextView(getContext());
-        textView.setGravity(Gravity.CENTER);
-        textView.setText(getClass().getSimpleName());
-        return textView;
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_mine, container, false);
+        binding.tvLogout.setOnClickListener(this);
+        initData();
+        return binding.getRoot();
+    }
+
+    private void initData() {
+        binding.tvName.setText(SPUtils.getString(getContext(), Constant.SP_KEY.USER_NAME));
+        binding.tvOffice.setText(SPUtils.getString(getContext(), Constant.SP_KEY.USER_OFFICE));
     }
 
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        activity = (MainActivity) context;
+    public void onClick(View v) {
+        MainActivity a = (MainActivity) getActivity();
+        a.exitApp();
     }
-
 }

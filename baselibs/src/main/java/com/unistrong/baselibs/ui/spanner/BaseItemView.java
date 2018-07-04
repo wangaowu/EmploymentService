@@ -4,7 +4,7 @@ import android.view.View;
 
 public abstract class BaseItemView<T extends View> {
 
-    public static final int ITEM_HEIGHT = 40;//dp
+    public static final int ITEM_HEIGHT = 55;//dp
 
     public abstract View getLeftView();
 

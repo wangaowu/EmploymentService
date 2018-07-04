@@ -7,7 +7,13 @@ import android.os.Build;
 import android.os.Environment;
 import android.support.v4.content.FileProvider;
 
+import com.unistrong.baselibs.style.Activity_;
+import com.unistrong.employmentservice.settings.UpdateActivity;
+import com.unistrong.framwork.resp.VersionResp;
+import com.unistrong.requestlibs.response.ResponseBody;
+
 import java.io.File;
+import java.util.HashMap;
 
 /**
  * 更新的帮助类
@@ -16,7 +22,7 @@ public class UpdateHelper {
     public static String APK_FILE_DIR;
 
     static {
-        APK_FILE_DIR = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Asem";
+        APK_FILE_DIR = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Employment";
         new File(APK_FILE_DIR).mkdirs();
     }
 
@@ -27,6 +33,38 @@ public class UpdateHelper {
                 file.delete();
             }
         }
+    }
+
+    /**
+     * 查询升级
+     */
+    public static void checkVersion(Activity_ context) {
+        int localVersion = GetEdition.getVersionCode(context);
+        HttpRequestImpl.getInstance().requestGet(Constant.Action.GET_VERSION, new HashMap(),
+                new ResponseBody<VersionResp>(VersionResp.class) {
+                    @Override
+                    public void onFailure(String message) {
+                    }
+
+                    @Override
+                    public void onSuccess(VersionResp resp) {
+                        if (isFailure(resp.getCode())) return;
+                        int serverCode = Integer.parseInt(resp.getResult().getAppVersionCode());
+                        if (serverCode > localVersion) {
+                            //有新版本,更新跳转
+                            gotoUpdateActivity(context, resp.getResult().getAppPath());
+                        } else {
+                            UpdateHelper.deleteInstalledApk();
+                        }
+                    }
+                });
+    }
+
+    private static void gotoUpdateActivity(Activity_ context, String apkUrl) {
+        Intent intent = new Intent(context, UpdateActivity.class);
+        intent.putExtra(UpdateActivity.INTENT_KEY, apkUrl);
+        context.startActivity(intent);
+        context.finish();
     }
 
     public static void autoInstall(Context context) {

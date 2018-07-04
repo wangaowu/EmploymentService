@@ -3,6 +3,7 @@ package com.unistrong.baselibs.ui.spanner;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.support.annotation.ArrayRes;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -44,6 +45,7 @@ public class ItemCheckView extends BaseItemView implements View.OnClickListener 
         tvLeft = itemView.findViewById(R.id.tv_flag);
         tvRight = itemView.findViewById(R.id.tv_content);
 
+        tvRight.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
         tvLeft.setText(left);
         initRight();
     }

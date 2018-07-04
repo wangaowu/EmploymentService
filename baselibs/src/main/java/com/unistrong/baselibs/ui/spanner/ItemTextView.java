@@ -24,7 +24,7 @@ public class ItemTextView extends BaseItemView {
         context = container.getContext();
         itemView = View.inflate(context, R.layout.common_text_item_with_flag_layout, null);
 
-        int height = DensityUtils.dp2px(context, ITEM_HEIGHT);
+        int height = DensityUtils.dp2px(context, ITEM_HEIGHT - 10);
         container.addView(itemView, new LinearLayout.LayoutParams(-1, height));
 
         tvLeft = itemView.findViewById(R.id.tv_flag);
@@ -32,7 +32,11 @@ public class ItemTextView extends BaseItemView {
 
         tvLeft.setText(left);
         tvRight.setHint(right);
-        tvRight.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+        tvRight.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, 0, 0);
+    }
+
+    public void setHideDivider(boolean hide) {
+        itemView.findViewById(R.id.hor_line).setVisibility(hide ? View.GONE : View.VISIBLE);
     }
 
     @Override

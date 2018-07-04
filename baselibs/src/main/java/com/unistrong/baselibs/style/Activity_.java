@@ -19,7 +19,7 @@ import com.unistrong.baselibs.utils.AppUtils;
 public class Activity_ extends AppCompatActivity {
     public String TAG = "Activity_";
     private static final String TAG_TITLE = "title";
-    protected int STATUS_BLUE = 0xff1A4677;
+    protected int STATUS_BLUE = 0xffFDA535;
     protected int statusBarColor = getStatusBarColor();
 
     @Override

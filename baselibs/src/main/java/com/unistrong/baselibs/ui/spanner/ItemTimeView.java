@@ -1,6 +1,8 @@
 package com.unistrong.baselibs.ui.spanner;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -16,13 +18,13 @@ import java.util.Date;
  * 右边选择时间样式
  */
 public class ItemTimeView extends BaseItemView implements View.OnClickListener {
-    private String PREFIX = "-";
-
+    private String PREFIX;
     private final Activity activity;
 
     private final View itemView;
     private final TextView tvLeft;
     private final TextView tvRight;
+    private DatePickerDialog datePickerDialog;
 
 //    private DateSelectDialog selTimeDialog;
 
@@ -42,6 +44,7 @@ public class ItemTimeView extends BaseItemView implements View.OnClickListener {
         tvLeft = itemView.findViewById(R.id.tv_flag);
         tvRight = itemView.findViewById(R.id.tv_content);
 
+        tvRight.setGravity(Gravity.CENTER_VERTICAL | Gravity.RIGHT);
         tvLeft.setText(left);
         initRight();
     }
@@ -92,22 +95,21 @@ public class ItemTimeView extends BaseItemView implements View.OnClickListener {
         showSelTimeDialog();
     }
 
+    // 日期对话框
     private void showSelTimeDialog() {
-        String ymd = getCurrentYMD();
-
-//        selTimeDialog = new DateSelectDialog(activity, R.style.Dialog_Fullscreen);
-//        selTimeDialog.setOnFinishDateSelListener((y, m, d) -> {
-//            tvRight.setText(y + PREFIX + m + PREFIX + d);
-//            selTimeDialog.dismiss();
-//        });
-//        selTimeDialog.setOnClearDateSelListener(() -> {
-//            tvRight.setText("");
-//            selTimeDialog.dismiss();
-//        });
-//        String[] ymds = ymd.split(PREFIX);
-////        selTimeDialog.setDatetime(Integer.parseInt(ymds[0]),
-////                Integer.parseInt(ymds[1]),
-////                Integer.parseInt(ymds[2]));
-//        selTimeDialog.show();
+        if (datePickerDialog == null) {
+            String[] ymds = getCurrentYMD().split(PREFIX);
+            int year = Integer.parseInt(ymds[0]);
+            int monthOfYear = Integer.parseInt(ymds[1]) - 1;
+            int dayOfMonth = Integer.parseInt(ymds[2]);
+            datePickerDialog = new DatePickerDialog(
+                    tvRight.getContext(),
+                    DatePickerDialog.THEME_HOLO_LIGHT,
+                    (view, year1, monthOfYear1, dayOfMonth1) -> {
+                        tvRight.setText(year1 + PREFIX + ( monthOfYear1 + 1) + PREFIX + dayOfMonth1);
+                        datePickerDialog.dismiss();
+                    }, year, monthOfYear, dayOfMonth);
+        }
+        datePickerDialog.show();
     }
 }

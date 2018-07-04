@@ -21,7 +21,7 @@ public abstract class BaseActivity extends Activity_ {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        statusBarColor = getResources().getColor(R.color.global_blue);
+        statusBarColor = getResources().getColor(R.color.global_orange);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         initMvp();
         setCommonTitleMarginTop(getStatusBarHeight());

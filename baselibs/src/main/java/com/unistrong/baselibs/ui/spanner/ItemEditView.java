@@ -1,6 +1,7 @@
 package com.unistrong.baselibs.ui.spanner;
 
 import android.content.Context;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -33,6 +34,7 @@ public class ItemEditView extends BaseItemView {
 
         tvLeft.setText(left);
         etRight.setHint(rightHint);
+        etRight.setGravity(Gravity.CENTER_VERTICAL | Gravity.RIGHT);
     }
 
     @Override

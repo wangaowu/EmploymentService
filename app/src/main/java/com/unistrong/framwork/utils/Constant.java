@@ -12,9 +12,15 @@ public class Constant {
      */
     public static class Action {
         public static final String LOGIN = "/user/login";//登陆
-        public static final String QUERY_SUMMARY = "/statistics/getNumberStatistics";//首页统计
+        public static final String QUERY_SUMMARY = "/statistics/getEmploymentChangeCount";//首页统计
         public static final String QUERY_CHANGE_LIST = "/employment/queryChangeList";//转移变更列表
-        public static final String QUERY_CHART_DATA = "/statistics/queryInfoDataChart";//首页图表
+        public static final String QUERY_CHART_DATA = "/statistics/getRecentlyEmploymentChangeNum";//首页图表
+        public static final String ADD_CHANGE_INFO = "/employment/change";//转移变更
+        public static final String UPDATE_CHANGE_INFO = "/employment/changeInfoUpdate";//转移信息编辑
+        public static final String QUERY_HISTORY = "/employment/changeInfoQuery";//本人历史信息
+        public static final String QUERY_DICT = "/dic/getDictionaryList";//动态字典
+        public static final String QUERY_USER_LIST = "/user/getUserList";//用户列表
+        public static final String GET_VERSION = "/appVersion/getLatestVersion";//版本信息
     }
 
     public static class SP_KEY {
@@ -22,6 +28,10 @@ public class Constant {
         public static final String USER_PWD = "user_password";
         public static final String TOKEN = "token";
         public static final String USER_ID = "user_id";
+
+        //user
+        public static final String USER_NAME = "user_name";
+        public static final String USER_OFFICE = "user_office";
 
         //address info
         public static final String LAT = "latitude";

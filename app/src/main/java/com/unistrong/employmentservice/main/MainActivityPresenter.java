@@ -1,5 +1,8 @@
 package com.unistrong.employmentservice.main;
 
+import android.content.Context;
+
+import com.unistrong.baselibs.utils.SPUtils;
 import com.unistrong.framwork.utils.Constant;
 import com.unistrong.framwork.utils.HttpRequestImpl;
 import com.unistrong.requestlibs.response.ResponseBody;
@@ -15,7 +18,7 @@ public class MainActivityPresenter {
      */
     public void requestSummary(ResponseBody listener) {
         HashMap<String, String> map = new HashMap<>();
-        HttpRequestImpl.getInstance().requestPost(Constant.Action.QUERY_SUMMARY, map, listener);
+        HttpRequestImpl.getInstance().requestGet(Constant.Action.QUERY_SUMMARY, map, listener);
     }
 
     /**
@@ -26,12 +29,13 @@ public class MainActivityPresenter {
      * @param currentPage 当前页
      * @param listener
      */
-    public void requestChangeList(String name, String idcard, int currentPage, ResponseBody listener) {
+    public void requestChangeList(String name, String idcard, Context context, int currentPage, ResponseBody listener) {
         HashMap<String, String> map = new HashMap<>();
         map.put("currentPage", String.valueOf(currentPage));
         map.put("pageSize", "15");
         map.put("name", name);
         map.put("idcard", idcard);
+        map.put("userId", SPUtils.getString(context, Constant.SP_KEY.USER_ID));
         HttpRequestImpl.getInstance().requestPost(Constant.Action.QUERY_CHANGE_LIST, map, listener);
     }
 
@@ -41,7 +45,7 @@ public class MainActivityPresenter {
      * @param listener
      */
     public void requestChartData(ResponseBody listener) {
-        HttpRequestImpl.getInstance().requestPost(Constant.Action.QUERY_CHART_DATA, new HashMap<>(),
+        HttpRequestImpl.getInstance().requestGet(Constant.Action.QUERY_CHART_DATA, new HashMap<>(),
                 listener);
     }
 }

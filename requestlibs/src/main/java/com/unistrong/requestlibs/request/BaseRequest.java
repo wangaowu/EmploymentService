@@ -27,7 +27,10 @@ import okhttp3.Response;
 public class BaseRequest extends BasePolicy {
     private static final String TAG = "BaseRequest";
 
-    public static final String HOST = "http://10.66.5.220:8080/employment-service";//lm
+    //public static final String HOST = "http://10.66.5.220:8080/employment-service";//lm
+    //public static final String HOST = "http://10.66.5.232:8080/employment-service";//zg
+    //public static final String HOST = "http://10.66.5.237:8089/employment-service";//sb
+    public static final String HOST = "http://10.66.2.82:8084/employment-service";//开发服务内网
 
     private Call call;
 

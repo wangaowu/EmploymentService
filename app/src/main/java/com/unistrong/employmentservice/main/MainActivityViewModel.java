@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.unistrong.employmentservice.R;
-import com.unistrong.employmentservice.databinding.ActivityHouseInfoBinding;
+import com.unistrong.employmentservice.databinding.ActivityMainBinding;
 import com.unistrong.employmentservice.main.fragment.MainFragment;
 import com.unistrong.employmentservice.main.fragment.ManageFragment;
 import com.unistrong.employmentservice.main.fragment.MineFragment;
@@ -18,11 +18,11 @@ import com.unistrong.employmentservice.main.fragment.MineFragment;
  */
 public class MainActivityViewModel {
 
-    private ActivityHouseInfoBinding binding;
+    private ActivityMainBinding binding;
     private static final int UNSELECT_COLOR = 0xFFAAAAAA;
-    private static final int SELECT_COLOR = 0xFF1A4677;
+    private static final int SELECT_COLOR = 0xFFFDA535;
 
-    public MainActivityViewModel(ActivityHouseInfoBinding binding) {
+    public MainActivityViewModel(ActivityMainBinding binding) {
         this.binding = binding;
     }
 
@@ -37,11 +37,11 @@ public class MainActivityViewModel {
         int childCount = binding.llCheckParent.getChildCount();
         for (int i = 0; i < childCount; i++) {
             View child = binding.llCheckParent.getChildAt(i);
-            makeBlue(child, false);
+            makeOrange(child, false);
         }
     }
 
-    public void makeBlue(View view, boolean isBlue) {
+    public void makeOrange(View view, boolean isBlue) {
         TextView tv = (TextView) view;
         String viewText = tv.getText().toString();
         int resId;
@@ -98,5 +98,10 @@ public class MainActivityViewModel {
         hideFragment(fragmentManager);
         Fragment fragment = getFragment(tag, fragmentManager);
         fragmentManager.beginTransaction().show(fragment).commitNowAllowingStateLoss();
+    }
+
+    public void refreshManageFragment(FragmentManager fragmentManager) {
+        ManageFragment fragment = (ManageFragment) getFragment(ManageFragment.TAG, fragmentManager);
+        fragment.onRefresh();
     }
 }

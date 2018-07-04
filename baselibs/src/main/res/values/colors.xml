@@ -84,8 +84,6 @@
     <color name="color_pressed">#10000000</color>
     <color name="possible_result_points">#c0ffff00</color>
 
-
-    <color name="global_blue">#1A4677</color>
-
+    <color name="global_orange">#FDA535</color>
 
 </resources>

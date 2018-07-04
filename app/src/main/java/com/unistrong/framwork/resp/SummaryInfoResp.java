@@ -1,14 +1,14 @@
 package com.unistrong.framwork.resp;
 
 /**
- * 首页人员采集、就业登记、转移变更数量统计
+ * 首页数量统计
  */
 public class SummaryInfoResp {
 
     /**
      * code : 0
      * msg : string
-     * result : {"allChangeNum":0,"allPersonNum":0,"allRegisterNum":0,"currentDayChangeNum":0,"currentDayPersonNum":0,"currentDayRegisterNum":0}
+     * result : {"currentChangedCount":0,"currentUnchangeCount":0}
      */
 
     private int code;
@@ -41,67 +41,27 @@ public class SummaryInfoResp {
 
     public static class ResultBean {
         /**
-         * allChangeNum : 0
-         * allPersonNum : 0
-         * allRegisterNum : 0
-         * currentDayChangeNum : 0
-         * currentDayPersonNum : 0
-         * currentDayRegisterNum : 0
+         * currentChangedCount : 0
+         * currentUnchangeCount : 0
          */
 
-        private int allChangeNum;
-        private int allPersonNum;
-        private int allRegisterNum;
-        private int currentDayChangeNum;
-        private int currentDayPersonNum;
-        private int currentDayRegisterNum;
+        private int currentChangedCount;
+        private int currentUnchangeCount;
 
-        public int getAllChangeNum() {
-            return allChangeNum;
+        public int getCurrentChangedCount() {
+            return currentChangedCount;
         }
 
-        public void setAllChangeNum(int allChangeNum) {
-            this.allChangeNum = allChangeNum;
+        public void setCurrentChangedCount(int currentChangedCount) {
+            this.currentChangedCount = currentChangedCount;
         }
 
-        public int getAllPersonNum() {
-            return allPersonNum;
+        public int getCurrentUnchangeCount() {
+            return currentUnchangeCount;
         }
 
-        public void setAllPersonNum(int allPersonNum) {
-            this.allPersonNum = allPersonNum;
-        }
-
-        public int getAllRegisterNum() {
-            return allRegisterNum;
-        }
-
-        public void setAllRegisterNum(int allRegisterNum) {
-            this.allRegisterNum = allRegisterNum;
-        }
-
-        public int getCurrentDayChangeNum() {
-            return currentDayChangeNum;
-        }
-
-        public void setCurrentDayChangeNum(int currentDayChangeNum) {
-            this.currentDayChangeNum = currentDayChangeNum;
-        }
-
-        public int getCurrentDayPersonNum() {
-            return currentDayPersonNum;
-        }
-
-        public void setCurrentDayPersonNum(int currentDayPersonNum) {
-            this.currentDayPersonNum = currentDayPersonNum;
-        }
-
-        public int getCurrentDayRegisterNum() {
-            return currentDayRegisterNum;
-        }
-
-        public void setCurrentDayRegisterNum(int currentDayRegisterNum) {
-            this.currentDayRegisterNum = currentDayRegisterNum;
+        public void setCurrentUnchangeCount(int currentUnchangeCount) {
+            this.currentUnchangeCount = currentUnchangeCount;
         }
     }
 }

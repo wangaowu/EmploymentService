@@ -1,5 +1,6 @@
 package com.unistrong.framwork.resp;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -10,7 +11,7 @@ public class ChangeListResp {
     /**
      * code : 0
      * msg : string
-     * result : [{"createUserId":0,"createUserName":"string","createUserOfficeName":"string","createUserTime":"string","dataSource":"string","dataType":"string","economicSituation":"string","employmentArea":"string","employmentChangeTime":"string","employmentChannel":"string","employmentId":"string","employmentMode":"string","employmentMonthlyIncome":"string","employmentPosition":"string","employmentTransferTime":"string","employmentWorkPlace":"string","householdAddress":"string","idcard":"string","imageUrl":"string","name":"string","nation":"string","personId":"string","remark":"string","sex":"string","status":"string","updateUserId":0,"updateUserTime":"string"}]
+     * result : [{"createUserId":0,"createUserTime":"string","dataSource":"string","dataType":"string","economicSituation":"string","employmentArea":"string","employmentChangeTime":"string","employmentChannel":"string","employmentId":"string","employmentMode":"string","employmentMonthlyIncome":"string","employmentPosition":"string","employmentTransferTime":"string","employmentWorkPlace":"string","householdAddress":"string","idcard":"string","imageUrl":"string","name":"string","nation":"string","personId":"string","remark":"string","responsibilityUserName":"string","responsibilityUserOfficeName":"string","sex":"string","status":"string","updateUserId":0,"updateUserTime":"string"}]
      * total : 0
      */
 
@@ -51,11 +52,9 @@ public class ChangeListResp {
         this.result = result;
     }
 
-    public static class ResultBean {
+    public static class ResultBean implements Serializable {
         /**
          * createUserId : 0
-         * createUserName : string
-         * createUserOfficeName : string
          * createUserTime : string
          * dataSource : string
          * dataType : string
@@ -76,6 +75,8 @@ public class ChangeListResp {
          * nation : string
          * personId : string
          * remark : string
+         * responsibilityUserName : string
+         * responsibilityUserOfficeName : string
          * sex : string
          * status : string
          * updateUserId : 0
@@ -83,8 +84,6 @@ public class ChangeListResp {
          */
 
         private int createUserId;
-        private String createUserName;
-        private String createUserOfficeName;
         private String createUserTime;
         private String dataSource;
         private String dataType;
@@ -105,6 +104,8 @@ public class ChangeListResp {
         private String nation;
         private String personId;
         private String remark;
+        private String responsibilityUserName;
+        private String responsibilityUserOfficeName;
         private String sex;
         private String status;
         private int updateUserId;
@@ -116,22 +117,6 @@ public class ChangeListResp {
 
         public void setCreateUserId(int createUserId) {
             this.createUserId = createUserId;
-        }
-
-        public String getCreateUserName() {
-            return createUserName;
-        }
-
-        public void setCreateUserName(String createUserName) {
-            this.createUserName = createUserName;
-        }
-
-        public String getCreateUserOfficeName() {
-            return createUserOfficeName;
-        }
-
-        public void setCreateUserOfficeName(String createUserOfficeName) {
-            this.createUserOfficeName = createUserOfficeName;
         }
 
         public String getCreateUserTime() {
@@ -292,6 +277,22 @@ public class ChangeListResp {
 
         public void setRemark(String remark) {
             this.remark = remark;
+        }
+
+        public String getResponsibilityUserName() {
+            return responsibilityUserName;
+        }
+
+        public void setResponsibilityUserName(String responsibilityUserName) {
+            this.responsibilityUserName = responsibilityUserName;
+        }
+
+        public String getResponsibilityUserOfficeName() {
+            return responsibilityUserOfficeName;
+        }
+
+        public void setResponsibilityUserOfficeName(String responsibilityUserOfficeName) {
+            this.responsibilityUserOfficeName = responsibilityUserOfficeName;
         }
 
         public String getSex() {
