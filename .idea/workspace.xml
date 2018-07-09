@@ -16,97 +16,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="781e6e72-e29e-4d91-88cf-c900efc9fe43" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/change/EmployeePresenter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/detail/EmployeeDetailActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/detail/EmployeeDetailViewModel.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/history/EmployeeHistoryActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/resp/StateResp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_change.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_edit.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_employee_detail.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_employee_history.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/baselibs/src/main/res/drawable/bg_stroke_blue.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_adapters_3_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_baseLibrary_3_1_2_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_databinding_library_3_1_2.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" afterPath="$PROJECT_DIR$/app/release/app-release.apk" />
-      <change beforePath="$PROJECT_DIR$/app/release/output.json" afterPath="$PROJECT_DIR$/app/release/output.json" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/login/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/login/LoginActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/MainActivityPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/MainActivityPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/MainActivityViewModel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/MainActivityViewModel.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/ManagePersonAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/ManageEmployeeAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/fragment/MainFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/fragment/MainFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/fragment/ManageFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/fragment/ManageFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/fragment/MineFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/fragment/MineFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/settings/UpdateActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/settings/UpdateActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/common/ItemImageView.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/common/ItemPickImageLayout.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/resp/ChangeListResp.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/resp/ChangeListResp.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/resp/ChartResp.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/resp/ChartResp.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/resp/SummaryInfoResp.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/resp/SummaryInfoResp.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/utils/Constant.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/utils/Constant.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/utils/DynamicDictUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/utils/DynamicDictUtils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/utils/UpdateHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/unistrong/framwork/utils/UpdateHelper.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_location.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_location.png" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/main_pressed.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/main_pressed.png" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/manage_pressed.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/manage_pressed.png" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/mine_pressed.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_house_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_task.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_record_house_info.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_update_image.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_house_image.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_manage.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_manage.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_change_list_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_change_list_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_image_layout.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_pick_window_picture.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change beforePath="$PROJECT_DIR$/baselibs/baselibs.iml" afterPath="$PROJECT_DIR$/baselibs/baselibs.iml" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/style/Activity_.java" afterPath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/style/Activity_.java" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/style/BaseActivity.java" afterPath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/style/BaseActivity.java" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/ui/spanner/BaseItemView.java" afterPath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/ui/spanner/BaseItemView.java" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/ui/spanner/ItemCheckView.java" afterPath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/ui/spanner/ItemCheckView.java" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/ui/spanner/ItemEditView.java" afterPath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/ui/spanner/ItemEditView.java" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/ui/spanner/ItemTextView.java" afterPath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/ui/spanner/ItemTextView.java" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/ui/spanner/ItemTimeView.java" afterPath="$PROJECT_DIR$/baselibs/src/main/java/com/unistrong/baselibs/ui/spanner/ItemTimeView.java" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/res/drawable/bg_btn_blue_normal.xml" afterPath="$PROJECT_DIR$/baselibs/src/main/res/drawable/bg_btn_blue_normal.xml" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/res/drawable/bg_btn_blue_pressed.xml" afterPath="$PROJECT_DIR$/baselibs/src/main/res/drawable/bg_btn_blue_pressed.xml" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/res/drawable/bg_stroke_bord_line.xml" afterPath="$PROJECT_DIR$/baselibs/src/main/res/drawable/bg_stroke_bord_line.xml" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/res/layout/common_form_blue_title_layout.xml" afterPath="$PROJECT_DIR$/baselibs/src/main/res/layout/common_form_blue_title_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/res/layout/common_text_item_with_flag_layout.xml" afterPath="$PROJECT_DIR$/baselibs/src/main/res/layout/common_text_item_with_flag_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/res/layout/common_title_layout.xml" afterPath="$PROJECT_DIR$/baselibs/src/main/res/layout/common_title_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/baselibs/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/baselibs/src/main/res/values/colors.xml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/locationlibs/locationlibs.iml" afterPath="$PROJECT_DIR$/locationlibs/locationlibs.iml" />
-      <change beforePath="$PROJECT_DIR$/locationlibs/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/locationlibs/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/picturelibs/picturelibs.iml" afterPath="$PROJECT_DIR$/picturelibs/picturelibs.iml" />
-      <change beforePath="$PROJECT_DIR$/picturelibs/src/main/java/com/PictureApplication.java" afterPath="$PROJECT_DIR$/picturelibs/src/main/java/com/PictureApplication.java" />
-      <change beforePath="$PROJECT_DIR$/requestlibs/requestlibs.iml" afterPath="$PROJECT_DIR$/requestlibs/requestlibs.iml" />
-      <change beforePath="$PROJECT_DIR$/requestlibs/src/main/java/com/unistrong/requestlibs/request/BaseRequest.java" afterPath="$PROJECT_DIR$/requestlibs/src/main/java/com/unistrong/requestlibs/request/BaseRequest.java" />
-      <change beforePath="$PROJECT_DIR$/scancodelibs/scancodelibs.iml" afterPath="$PROJECT_DIR$/scancodelibs/scancodelibs.iml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -178,6 +94,7 @@
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -6830,9 +6747,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -6844,6 +6758,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -6853,7 +6770,7 @@
     <property name="device.picker.selection" value="HT7AK1A01683" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="SearchEverywhereHistoryKey" value="settings&#9;FILE&#9;file://D:/workspace/EmploymentService/app/src/main/java/com/unistrong/employmentservice/settings" />
     <property name="DEBUGGABLE_DEVICE" value="lge-pixel_2-012c9c6a5e53170c" />
     <property name="DEBUGGABLE_PROCESS" value="com.unistrong.employmentservice" />
@@ -6979,18 +6896,6 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="EmploymentService" />
-      <envs />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -7040,6 +6945,18 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="EmploymentService" />
+      <envs />
+    </configuration>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -7063,7 +6980,7 @@
   <component name="ToolWindowManager">
     <frame x="-1374" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3287037" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -7077,13 +6994,13 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28214827" sideWeight="0.4961915" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26080248" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22919819" sideWeight="0.4961915" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26080248" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2962963" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2962963" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -7184,13 +7101,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/picturelibs/src/main/res/xml/file_paths.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/settings/UpdateActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1575">
@@ -7202,7 +7112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7210,7 +7119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="605">
           <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7233,7 +7141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7265,7 +7172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7273,26 +7179,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baselibs/src/main/res/drawable/bg_btn_blue_selector.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7300,7 +7203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7329,32 +7231,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="12371" column="25" lean-forward="false" selection-start-line="12371" selection-start-column="25" selection-end-line="12371" selection-end-column="25" />
-          <folding>
-            <element signature="e#497328#497329#0" expanded="false" />
-            <element signature="e#497359#497360#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_employee_detail.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-375">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baselibs/src/main/res/layout/common_text_item_with_flag_layout.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baselibs/src/main/res/layout/common_text_item_with_flag_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="42" column="47" lean-forward="false" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/detail/EmployeeDetailViewModel.java">
@@ -7368,7 +7266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7388,7 +7285,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3300">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7396,92 +7292,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="96" column="24" lean-forward="false" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="24" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/fragment/MineFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mine.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_employee_history.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_employee_history.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baselibs/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="78" column="17" lean-forward="false" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_change_list_layout.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_history_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/history/EmployeeHistoryActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7508,40 +7399,38 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/unistrong/employmentservice/main/fragment/MainFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="155" column="5" lean-forward="false" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_manage.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-100">
           <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7560,7 +7449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7579,7 +7467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7587,7 +7474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7595,7 +7481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7611,6 +7496,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
