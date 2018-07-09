@@ -30,7 +30,8 @@ public class BaseRequest extends BasePolicy {
     //public static final String HOST = "http://10.66.5.220:8080/employment-service";//lm
     //public static final String HOST = "http://10.66.5.232:8080/employment-service";//zg
     //public static final String HOST = "http://10.66.5.237:8089/employment-service";//sb
-    public static final String HOST = "http://10.66.2.82:8084/employment-service";//开发服务内网
+    //public static final String HOST = "http://10.66.2.82:8084/employment-service";//开发服务内网
+    public static final String HOST = "http://113.200.215.139:8902/employment-service";//开发服务外网
 
     private Call call;
 

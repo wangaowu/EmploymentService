@@ -9,6 +9,7 @@ import com.unistrong.baselibs.ui.spanner.ItemEditView;
 import com.unistrong.baselibs.ui.spanner.ItemTextView;
 import com.unistrong.baselibs.ui.spanner.ItemTimeView;
 import com.unistrong.baselibs.utils.IToast;
+import com.unistrong.baselibs.utils.StringUtils;
 import com.unistrong.employmentservice.databinding.ActivityEditEmployeeDetailBinding;
 import com.unistrong.framwork.resp.ChangeListResp;
 import com.unistrong.framwork.utils.DynamicDictUtils;
@@ -62,6 +63,7 @@ public class EmployeeEditViewModel {
         responseNameView.setElements(DynamicDictUtils.getUserArrays());
 
         //限制输入类型
+        idcardView.getRightView().setFocusable(false);
         idcardView.getRightView().setInputType(EditorInfo.TYPE_CLASS_NUMBER);
         incomeView.getRightView().setInputType(EditorInfo.TYPE_CLASS_NUMBER);
     }
@@ -115,12 +117,11 @@ public class EmployeeEditViewModel {
         return params;
     }
 
-    public void requestFocus() {
-        idcardView.getRightView().setFocusable(true);
-        idcardView.getRightView().requestFocus();
-    }
-
     public boolean isOk() {
+        if (StringUtils.IdentifyCard.isCorrect(idcardView.getRightText())) {
+            IToast.toast("请检查身份证！");
+            return false;
+        }
         if (TextUtils.isEmpty(employmentModeView.getRightText())) {
             IToast.toast("请检查就业方式！");
             return false;

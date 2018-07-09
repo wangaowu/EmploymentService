@@ -8,6 +8,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.unistrong.baselibs.utils.DensityUtils;
+import com.unistrong.baselibs.utils.NumberUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,12 +17,14 @@ import java.util.List;
  * 自定义view计算基类
  */
 public class BaseMeasure extends View {
+    protected static final String TAG = "BaseMeasure";
     private static final int MIN_WIDTH = 300;
     private static final int MIN_HEIGHT = 100;
     private static final int PADDING_LEFT = 40;
     private static final int PADDING_RIGHT = 20;
     private static final int PADDING_VERTICAL = 20;
     protected static final int ANXIUS_Y_COUNT = 6; //Y轴坐标的个数
+
 
     private int viewWidth;
     private int viewHeight;
@@ -59,7 +62,17 @@ public class BaseMeasure extends View {
     }
 
     protected boolean measureComplete() {
-        return chartRectF != null && bindDatas != null && !bindDatas.isEmpty();
+        return chartRectF != null
+                && bindDatas != null
+                && !bindDatas.isEmpty();
+    }
+
+    /**
+     * 取值
+     */
+    protected String getDynamicYFlag(int yValue) {
+        if (yValue < 1000) return String.valueOf(yValue);
+        return String.valueOf(NumberUtils.keepPrecision(yValue * .001f, 2)) + "k";
     }
 
     /**
@@ -67,7 +80,15 @@ public class BaseMeasure extends View {
      */
     private int invalidateMax(float maxValue) {
         if (maxValue < 10) return 10;
-        int step = (ANXIUS_Y_COUNT - 1) * 10;
+        if (maxValue < 1000) {
+            int step = (ANXIUS_Y_COUNT - 1) * 10;
+            return (((int) maxValue) / step + 1) * step;
+        }
+        if (maxValue < 10000) {
+            int step = (ANXIUS_Y_COUNT - 1) * 100;
+            return (((int) maxValue) / step + 1) * step;
+        }
+        int step = (ANXIUS_Y_COUNT - 1) * 1000;
         return (((int) maxValue) / step + 1) * step;
     }
 
@@ -90,17 +111,17 @@ public class BaseMeasure extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        viewWidth = getSize(widthMeasureSpec, DensityUtils.dp2px(getContext(), MIN_WIDTH));
-        viewHeight = getSize(heightMeasureSpec, DensityUtils.dp2px(getContext(), MIN_HEIGHT));
+        this.viewWidth = getSize(widthMeasureSpec, DensityUtils.dp2px(getContext(), MIN_WIDTH));
+        this.viewHeight = getSize(heightMeasureSpec, DensityUtils.dp2px(getContext(), MIN_HEIGHT));
         initBounds();
         scaleElementsRect();
     }
 
     private void initBounds() {
-        paddingLeft = DensityUtils.dp2px(getContext(), PADDING_LEFT) + getPaddingLeft();
-        paddingRight = DensityUtils.dp2px(getContext(), PADDING_RIGHT) + getPaddingRight();
-        paddingVertical = DensityUtils.dp2px(getContext(), PADDING_VERTICAL);
-        chartRectF = new RectF(paddingLeft, paddingVertical, viewWidth - paddingRight, viewHeight - paddingVertical);
+        this.paddingLeft = DensityUtils.dp2px(getContext(), PADDING_LEFT) + getPaddingLeft();
+        this.paddingRight = DensityUtils.dp2px(getContext(), PADDING_RIGHT) + getPaddingRight();
+        this.paddingVertical = DensityUtils.dp2px(getContext(), PADDING_VERTICAL);
+        this.chartRectF = new RectF(paddingLeft, paddingVertical, viewWidth - paddingRight, viewHeight - paddingVertical);
     }
 
     private int getSize(int sizeMeasureSpec, int atMost) {

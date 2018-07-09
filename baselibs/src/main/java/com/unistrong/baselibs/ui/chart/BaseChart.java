@@ -6,8 +6,10 @@ import android.graphics.Color;
 import android.graphics.DashPathEffect;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.view.View;
 
 import com.unistrong.baselibs.utils.DensityUtils;
 
@@ -28,6 +30,10 @@ public class BaseChart extends BaseMeasure {
 
     public BaseChart(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        //关闭硬件加速
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+        }
         initPaint();
     }
 
@@ -86,9 +92,9 @@ public class BaseChart extends BaseMeasure {
         paint.setTextAlign(Paint.Align.RIGHT);
         paint.setTextSize(textSize);
         for (int i = 0; i < ANXIUS_Y_COUNT; i++) {
-            String text = String.valueOf(yStepValue * (ANXIUS_Y_COUNT - 1 - i));
+            int yValue = yStepValue * (ANXIUS_Y_COUNT - 1 - i);
             float baseLine = chartRectF.top + yDistance * i + +textSize / 4;
-            canvas.drawText(text, x, baseLine, paint);
+            canvas.drawText(getDynamicYFlag(yValue), x, baseLine, paint);
         }
     }
 
@@ -110,7 +116,8 @@ public class BaseChart extends BaseMeasure {
         paint.setColor(Color.LTGRAY);
         paint.setStrokeWidth(1);
         paint.setStyle(Paint.Style.STROKE);
-        paint.setPathEffect(new DashPathEffect(new float[]{4f, 4f}, 4f));
+        int dashInterval = DensityUtils.dp2px(getContext(), 10);
+        paint.setPathEffect(new DashPathEffect(new float[]{dashInterval, dashInterval}, 4f));
         for (int i = 0; i < elementRectFs.size(); i += dynamicStep) {
             RectF elementRect = elementRectFs.get(i);
             float centerX = elementRect.centerX();

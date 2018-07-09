@@ -71,15 +71,15 @@ public class LoginPresenter {
     /**
      * 登陆
      */
-    public void login( String account, String pwd, ResponseBody listener) {
+    public void login(String account, String pwd,  ResponseBody listener) {
         HashMap<String, String> params = new HashMap<>();
         params.put("account", account);
         params.put("password", pwd);
         HttpRequestImpl.getInstance().requestPost(Constant.Action.LOGIN, params, listener);
     }
 
-    public void startMainActivity(LoginActivity loginActivity) {
-        Intent intent = new Intent(loginActivity, MainActivity.class);
-        loginActivity.startActivity(intent);
+    public void startMainActivity(BaseActivity activity) {
+        Intent intent = new Intent(activity, MainActivity.class);
+        activity.startActivity(intent);
     }
 }
