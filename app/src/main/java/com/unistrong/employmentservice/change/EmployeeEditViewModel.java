@@ -114,6 +114,7 @@ public class EmployeeEditViewModel {
         //责任人
         String responseId = DynamicDictUtils.getUserId(responseNameView.getRightText());
         params.put("responsibilityUserId", responseId);//c
+        params.put("dataSource", "APP");//c
         return params;
     }
 
@@ -122,11 +123,15 @@ public class EmployeeEditViewModel {
             IToast.toast("请检查身份证！");
             return false;
         }
-        if (TextUtils.isEmpty(employmentModeView.getRightText())) {
+        if (TextUtils.isEmpty(employmentModeView.getRightText())
+                || "-1".equals(DynamicDictUtils.getKey(
+                employmentModeView.getRightText(), DynamicDictUtils.employeeModeList))) {
             IToast.toast("请检查就业方式！");
             return false;
         }
-        if (TextUtils.isEmpty(employmentChannelView.getRightText())) {
+        if (TextUtils.isEmpty(employmentChannelView.getRightText())
+                || "-1".equals(DynamicDictUtils.getKey(
+                employmentChannelView.getRightText(), DynamicDictUtils.employeeChannelList))) {
             IToast.toast("请检查就业渠道！");
             return false;
         }
@@ -134,7 +139,9 @@ public class EmployeeEditViewModel {
             IToast.toast("请检查转移变更时间！");
             return false;
         }
-        if (TextUtils.isEmpty(employmentAreaView.getRightText())) {
+        if (TextUtils.isEmpty(employmentAreaView.getRightText())
+                || "-1".equals(DynamicDictUtils.getKey(
+                employmentAreaView.getRightText(), DynamicDictUtils.employeeAreaList))) {
             IToast.toast("请检查就业区域！");
             return false;
         }
