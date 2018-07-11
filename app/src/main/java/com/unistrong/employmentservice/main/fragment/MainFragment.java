@@ -98,7 +98,7 @@ public class MainFragment extends Fragment implements SwipeRefreshLayout.OnRefre
     private void setChartViewData(List<ChartResp.ResultBean> chartList) {
         if (chartList == null || chartList.isEmpty()) return;
         setChartViewVisible(true);
-        binding.chartView.setData(getMaxValue(chartList), composeChartData(chartList));
+        binding.chartView.setData(getMaxValue(chartList), composeChartData(chartList), "人");
         binding.tvCountYear.setText("总变更数:" + getTotal(chartList));
     }
 

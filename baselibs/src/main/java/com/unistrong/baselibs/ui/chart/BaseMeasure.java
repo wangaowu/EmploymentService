@@ -36,6 +36,7 @@ public class BaseMeasure extends View {
 
     protected List<BindData> bindDatas;
     protected int maxValue;
+    protected String unit;
 
     public BaseMeasure(Context context) {
         super(context);
@@ -49,9 +50,10 @@ public class BaseMeasure extends View {
         super(context, attrs, defStyleAttr);
     }
 
-    public void setData(float maxValue, List<BindData> datas) {
+    public void setData(float maxValue, List<BindData> datas, String unit) {
         if (datas == null) return;
         this.maxValue = invalidateMax(maxValue);
+        this.unit = unit;
         for (int i = 0; i < datas.size(); i++) {
             BindData bindData = datas.get(i);
             bindData.yRatio = bindData.valueY / this.maxValue;
@@ -68,11 +70,15 @@ public class BaseMeasure extends View {
     }
 
     /**
-     * 取值
+     * 取动态竖轴值
+     *
+     * @param yValue  值
+     * @param useThou 是否使用 "千" 单位
+     * @return
      */
-    protected String getDynamicYFlag(int yValue) {
-        if (yValue < 1000) return String.valueOf(yValue);
-        return String.valueOf(NumberUtils.keepPrecision(yValue * .001f, 2)) + "k";
+    protected String getDynamicYFlag(int yValue, boolean useThou) {
+        return useThou ? String.valueOf(NumberUtils.keepPrecision(yValue * .001f, 2))
+                : String.valueOf(yValue);
     }
 
     /**

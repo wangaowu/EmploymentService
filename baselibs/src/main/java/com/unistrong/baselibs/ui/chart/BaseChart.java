@@ -55,13 +55,25 @@ public class BaseChart extends BaseMeasure {
         drawHorizontalBaseLine(canvas);
         //绘制垂直轴文字
         resetPaint();
-        drawVerticalBaseFlag(canvas);
+        String unit_ = drawVerticalBaseFlag(canvas);
+        //绘制单位
+        resetPaint();
+        drawUnit(canvas, unit_);
         //绘制水平轴文字
         resetPaint();
         int dynamicStep = drawHorizontalBaseFlag(canvas);
         //绘制数据的指示线
         resetPaint();
         drawDataIndicatorLines(canvas, dynamicStep);
+    }
+
+    private void drawUnit(Canvas canvas, String unit_) {
+        int margin = DensityUtils.dp2px(getContext(), 5);
+        int textSize = DensityUtils.dp2px(getContext(), 14);
+        paint.setColor(Color.LTGRAY);
+        paint.setTextSize(textSize);
+        paint.setTextAlign(Paint.Align.LEFT);
+        canvas.drawText("单位:" + unit_, chartRectF.left + margin, chartRectF.top - margin, paint);
     }
 
     private int drawHorizontalBaseFlag(Canvas canvas) {
@@ -81,7 +93,7 @@ public class BaseChart extends BaseMeasure {
         return dynamicStep;
     }
 
-    private void drawVerticalBaseFlag(Canvas canvas) {
+    private String drawVerticalBaseFlag(Canvas canvas) {
         int paddingText = DensityUtils.dp2px(getContext(), 5);
         int textSize = DensityUtils.dp2px(getContext(), 14);
         int yStepValue = (maxValue / (ANXIUS_Y_COUNT - 1));
@@ -91,11 +103,13 @@ public class BaseChart extends BaseMeasure {
         paint.setColor(Color.LTGRAY);
         paint.setTextAlign(Paint.Align.RIGHT);
         paint.setTextSize(textSize);
+        boolean useThou = yStepValue * 1 > 1000;
         for (int i = 0; i < ANXIUS_Y_COUNT; i++) {
             int yValue = yStepValue * (ANXIUS_Y_COUNT - 1 - i);
             float baseLine = chartRectF.top + yDistance * i + +textSize / 4;
-            canvas.drawText(getDynamicYFlag(yValue), x, baseLine, paint);
+            canvas.drawText(getDynamicYFlag(yValue, useThou), x, baseLine, paint);
         }
+        return useThou ? "千" + unit : unit;
     }
 
     private void drawHorizontalBaseLine(Canvas canvas) {
