@@ -45,13 +45,6 @@ public class ChartResp {
     }
 
     public List<ResultBean> getResult() {
-        result = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            ResultBean resultBean = new ResultBean();
-            resultBean.setCurrentDayCount("1050" + i);
-            resultBean.setDay("2018-02-" + i);
-            result.add(resultBean);
-        }
         return result;
     }
 
